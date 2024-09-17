@@ -7,14 +7,12 @@ export const Participants = ({ participantA, participantB}: ParticipantsProps) =
   return (
     <div className="participants">
       <h2>
-        {/* Dynamically referencing logo based on BASE_URL */}
-        <img src={`${import.meta.env.BASE_URL}assets/logo.svg`} className="logo" alt="FBG" />
+        <img src="public/logo.svg" className="logo" alt="FBG" />
         {participantA}
       </h2>
       <div>at <hr /></div>
       <h2>
-        {/* Dynamically referencing logo based on BASE_URL */}
-        <img src={`${import.meta.env.BASE_URL}assets/logo.svg`} className="logo" alt="FBG" />
+        <img  src="public/logo.svg" className="logo" alt="FBG" />
         {participantB}
       </h2>
     </div>

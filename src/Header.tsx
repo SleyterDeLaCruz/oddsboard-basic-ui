@@ -2,14 +2,12 @@ export interface HeaderProps {
   title: string;
   keyMarkets: string[];
 }
-
 export const Header = ({ title = "Oddsboard", keyMarkets }: HeaderProps) => {
   return (
     <header>
       <div>
-        {/* Dynamically referencing logo based on BASE_URL */}
-        <h1><img src={`${import.meta.env.BASE_URL}assets/logo.svg`} className="logo" alt="FBG" />{title}</h1>
-        <img src={`${import.meta.env.BASE_URL}assets/logo-tertiary.svg`} className="logo" alt="FBG" />
+        <h1><img src="/public/logo.svg" className="logo" alt="FBG" />{title}</h1>
+        <img src="/public/assets/logo-tertiary.svg" className="logo" alt="FBG" />
       </div>
       <div>
         {keyMarkets?.map((market) => (

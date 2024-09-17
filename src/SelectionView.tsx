@@ -12,8 +12,7 @@ export const Selection = ({ line, price, suspended = false }: SelectionProps) =>
       {!suspended && line && <h3>{line}</h3>}
       {!suspended && <h2>{price ?? "--"}</h2>}
       {!!suspended && (
-        // Dynamically referencing lock icon based on BASE_URL
-        <img src={`${import.meta.env.BASE_URL}assets/lock.svg`} className="suspended" alt="suspended" />
+        <img src="public/logo.svg" className="suspended" alt="suspended" />
       )}
     </div>
   );
