@@ -7,19 +7,16 @@ export interface EventDetailsProps {
   };
 }
 
-export const EventDetails = ({ time, inPlay }: EventDetailsProps) => {
+export const EventDetails = ({ time, inPlay, score }: EventDetailsProps) => {
   return (
     <div className="event-details">
       {!inPlay && <h2>{time}</h2>} 
       {inPlay && (            
         <div>
           <div className="column">
-            {/* <h2>{score?.A}</h2>
-            <h2>{score?.B}</h2> */}
-          </div>
-          <div className="column">
-            <h2>LIVE</h2>
-            <h2>Starting Soon</h2>
+            <h2>{score?.A}</h2>
+            <br />
+            <h2>{score?.B}</h2>
           </div>
         </div>
       )}
