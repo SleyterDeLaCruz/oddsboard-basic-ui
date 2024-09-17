@@ -7,7 +7,7 @@ export const Participants = ({ participantA, participantB}: ParticipantsProps) =
   return (
     <div className="participants">
       <h2>
-        <img src={`/assets/logo.svg`} className="logo" alt="FBG" />
+        <img src={`/oddsboard-basic-ui/oddsboard-basic-ui/assets/logo.svg`} className="logo" alt="FBG" />
         {participantA}
       </h2>
       <div>at <hr /></div>
