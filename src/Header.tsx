@@ -6,8 +6,8 @@ export const Header = ({ title = "Oddsboard", keyMarkets }: HeaderProps) => {
   return (
     <header>
       <div>
-        <h1><img src="/public/logo.svg" className="logo" alt="FBG" />{title}</h1>
-        <img src="/public/assets/logo-tertiary.svg" className="logo" alt="FBG" />
+        <h1><img src="/assets/logo.svg" className="logo" alt="FBG" />{title}</h1>
+        <img src="/assets/logo-tertiary.svg" className="logo" alt="FBG" />
       </div>
       <div>
         {keyMarkets?.map((market) => (
