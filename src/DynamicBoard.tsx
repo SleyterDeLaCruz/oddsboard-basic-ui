@@ -217,7 +217,7 @@ export function DynamicBoard() {
   }, []);
 
   return (
-    <main className="main" style={{ backgroundImage: 'url(assets/oddsboard.png)' }}>
+    <main className="main" style={{ backgroundImage: 'url(/oddsboards-basic-ui/assetsoddsboard.png)' }}>
       <Header title={title} keyMarkets={keyMarkets} />
       <section className="column" ref={eventListRef} style={{ maxHeight: '100vh', overflow: 'auto' }}>
         {events.map((event) => (
