@@ -12,7 +12,7 @@ export const Selection = ({ line, price, suspended = false }: SelectionProps) =>
       {!suspended && line && <h3>{line}</h3>}
       {!suspended && <h2>{price ?? "--"}</h2>}
       {!!suspended && (
-        <img src="/assets/lock.svg" className="suspended" alt="suspended" />
+        <img src={`${import.meta.env.BASE_URL}assets/lock.svg`} className="suspended" alt="suspended" />
       )}
     </div>
   );
