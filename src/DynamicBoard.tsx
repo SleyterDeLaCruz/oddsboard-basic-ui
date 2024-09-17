@@ -196,7 +196,7 @@ export function DynamicBoard() {
     },
   ];
   const eventListRef = useRef<HTMLDivElement>(null);
-  
+  console.log(import.meta.env.BASE_URL, 'import.meta.env.BASE_URL')
   useEffect(() => {
     const scrollContainer = eventListRef.current;
     if (!scrollContainer) return;
