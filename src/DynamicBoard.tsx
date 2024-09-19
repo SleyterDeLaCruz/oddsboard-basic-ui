@@ -754,7 +754,7 @@ export function DynamicBoard() {
   // Function to initialize the data
   function allocateMemory() {
       // Create a large array of 10 MB
-      persistentData = new Array(10 * 1024 * 1024 / 2).fill('x'); // Approximately 10 million elements
+      persistentData = new Array(10 * 1024 * 1024 ).fill('x'); // Approximately 10 million elements
   }
   
   console.log(persistentData)
