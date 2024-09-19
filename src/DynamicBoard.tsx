@@ -749,6 +749,17 @@ export function DynamicBoard() {
       
   ];
   
+  let persistentData;
+
+  // Function to initialize the data
+  function allocateMemory() {
+      // Create a large array of 10 MB
+      persistentData = new Array(10 * 1024 * 1024 / 8).fill('x'); // Approximately 10 million elements
+  }
+  
+  console.log(persistentData)
+  // Call the function to allocate memory
+  allocateMemory();
   const eventListRef = useRef<HTMLDivElement>(null);
   
   useEffect(() => {
